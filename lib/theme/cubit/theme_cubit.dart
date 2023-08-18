@@ -3,7 +3,7 @@ import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:bloc_demo/weather/models/weather.dart';
 import 'package:weather_repository/weather_repository.dart' hide Weather;
 
-class ThemeCubit extends HydratedCubit {
+class ThemeCubit extends HydratedCubit<Color> {
   ThemeCubit() : super(defaultColor);
 
   static const defaultColor = Colors.blue;
